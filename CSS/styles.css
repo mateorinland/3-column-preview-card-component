@@ -72,9 +72,107 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.card .sedans-section {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.card .sedans-section button {
+  color: hsl(31deg, 77%, 52%);
+}
+.card .sedans-section button:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+}
+.card .suvs-section {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.card .suvs-section button {
+  color: hsl(184deg, 100%, 22%);
+}
+.card .suvs-section button:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+}
+.card .luxury-section {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.card .luxury-section button {
+  color: hsl(179deg, 100%, 13%);
+}
+.card .luxury-section button:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+section {
+  padding: 3.3rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+}
+
+p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 170%;
+}
+
+button {
+  background-color: hsl(0deg, 0%, 95%);
+  border-radius: 25px;
+  border: 1px solid white;
+  width: 60%;
+  padding: 0.6rem;
+  margin: 1rem 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 1rem 16rem;
+  }
+  .card {
+    flex-direction: row;
+  }
+  button {
+    margin-top: 5rem;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(179deg, 100%, 13%);
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
