@@ -1,0 +1,157 @@
+@import "_reset";
+
+$Bright_orange: #935716;
+$Dark_cyan: hsl(184, 100%, 22%);
+$Very_dark_cyan: hsl(179, 100%, 13%);
+$Transparent_white_paragraphs: hsla(0, 0%, 100%, 0.493);
+$Very_light_gray: hsl(0, 0%, 95%);
+
+body {
+  font-size: 0.938rem;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem 1.5rem;
+  background-color: $Very_light_gray;
+  color: $Very_light_gray;
+}
+
+@media screen and (min-width: 62.5rem) {
+  body {
+    padding: 1rem 16rem;
+  }
+}
+
+/* MAIN */
+
+.sr-only {
+  position: absolute;
+  width: 0.067rem;
+  height: 0.067rem;
+  padding: 0;
+  margin: -0.067rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.card {
+  border-radius: 0.333rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.section {
+  padding: 3.3rem;
+  width: 19.3rem;
+}
+
+.car-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+}
+
+.car-info {
+  color: $Transparent_white_paragraphs;
+  line-height: 1.7;
+}
+
+.info-button {
+  background-color: $Very_light_gray;
+  border-radius: 1.667rem;
+  border: 0.067rem solid white;
+  width: 9rem;
+  padding: 0.6rem;
+  margin: 1rem 0 0;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .info-button {
+    margin-top: 5rem;
+  }
+}
+
+/** SEDANS REGION **/
+
+.sedans {
+  background-color: $Bright_orange;
+}
+
+.sedans .car-info {
+    color: #faead8;
+    //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
+  }
+
+.sedans .info-button {
+  color: $Bright_orange;
+}
+
+.sedans .info-button:hover {
+  background-color: $Bright_orange;
+  color: $Very_light_gray;
+}
+
+/** SUVS REGION **/
+
+.suvs {
+  background-color: $Dark_cyan;
+}
+
+.suvs .car-info {
+    color: #c8e4e5;
+    //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
+  }
+
+.suvs .info-button {
+  color: $Dark_cyan;
+}
+
+.suvs .info-button:hover {
+  background-color: $Dark_cyan;
+  color: $Very_light_gray;
+}
+
+/** LUXURY REGION **/
+
+.luxury {
+  background-color: $Very_dark_cyan;
+}
+
+.luxury .car-info {
+    color: #faead8;
+    //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
+  }
+
+.luxury .info-button {
+  color: $Very_dark_cyan;
+}
+
+.luxury .info-button:hover {
+  background-color: $Very_dark_cyan;
+  color: $Very_light_gray;
+}
+
+/* CONTENTINFO */
+
+.attribution {
+  font-size: 0.733rem;
+  text-align: center;
+  color: $Very_dark_cyan;
+}
+
+.attribution-link {
+  color: hsl(228, 45%, 44%);
+}
